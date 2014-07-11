@@ -25,6 +25,9 @@ class RootTeacupViewController < UIViewController
   def dealloc
     puts "dealloc: #{self.class}"
 
+    # uncomment to fix leak of controller
+    # self.awesome_sub_controller = nil
+
     super
   end
 
